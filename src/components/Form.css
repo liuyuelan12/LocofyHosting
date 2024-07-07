@@ -1,0 +1,98 @@
+.sign-in {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  font-family: inherit;
+}
+.email1,
+.password1 {
+  border: 0;
+  background-color: transparent;
+  align-self: stretch;
+  height: 51px;
+  font-family: var(--font-archivo);
+  font-size: var(--font-size-base);
+  color: var(--light-text);
+}
+.form-fields1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base-7);
+}
+.search-flights-button3 {
+  width: 160px;
+  height: 52px;
+}
+.search-flights-button3:hover {
+  background-color: var(--color-saddlebrown);
+}
+.form5 {
+  margin: 0;
+  gap: var(--gap-7xl-7);
+}
+.form4,
+.form5,
+.login-form-content {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.login-form-content {
+  gap: var(--gap-5xl);
+  flex-shrink: 0;
+}
+.form-child {
+  align-self: stretch;
+  height: 2px;
+  position: relative;
+  border-top: 1.6px solid var(--color-whitesmoke-200);
+  box-sizing: border-box;
+}
+.sign-up {
+  color: var(--accent);
+}
+.dont-have-an-container {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.02em;
+  line-height: 26px;
+  text-align: center;
+  cursor: pointer;
+}
+.form3 {
+  flex: 1;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-21xl) var(--padding-29xl);
+  box-sizing: border-box;
+  gap: var(--gap-18xl-2);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-7xl);
+  color: var(--dark);
+  font-family: var(--font-archivo);
+}
+@media screen and (max-width: 750px) {
+  .form3 {
+    gap: var(--gap-lgi);
+    padding: var(--padding-7xl) var(--padding-5xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .sign-in {
+    font-size: var(--font-size-2xl);
+  }
+}
