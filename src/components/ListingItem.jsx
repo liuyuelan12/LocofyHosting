@@ -1,5 +1,6 @@
-import { useCallback } from "react";
+import { useContext, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import { CardStateContext } from "../context/CardStateContext";
 import PropTypes from "prop-types";
 import "./ListingItem.css";
 
@@ -15,6 +16,8 @@ const ListingItem = ({
   onListingItemContainerClick,
 }) => {
   const navigate = useNavigate();
+  const cardStateContext = useContext(CardStateContext);
+  const cardState = cardStateContext.cardState;
 
   const onListingItemContainerClick1 = useCallback(() => {
     navigate("/property-details");
